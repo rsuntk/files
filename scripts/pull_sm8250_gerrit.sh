@@ -9,7 +9,7 @@ if [ -z "$REFS" ]; then
 fi
 
 if [ -d $(pwd)/sm8250 ]; then
-	echo "Detected $(pwd)/sm8250, pulling from github..
+	echo "Detected $(pwd)/sm8250, pulling from github.."
 	pushd $(pwd)/sm8250
 	git config pull.rebase true
 	git pull origin lineage-20
