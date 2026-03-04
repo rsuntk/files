@@ -1,9 +1,9 @@
 #! /usr/bin/env bash
 
-REFS="$1"
+REFS="refs/changes/$1"
 start_time=$(date +"%s")
 
-if [ -z "$REFS" ]; then
+if [ -z "$1" ]; then
 	echo "Specify the refs!"
 	exit 1;
 fi
