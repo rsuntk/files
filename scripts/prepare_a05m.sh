@@ -1,6 +1,6 @@
 rcd() {
   # Remove .git to make repo sync happy
-  rm -rf $2; git clone $1 --depth=1 -b $3; rm -rf $2/.git
+  rm -rf $2; git clone $1 --depth=1 -b $3 $2; rm -rf $2/.git
 }
 
 # ssh key is needed
