@@ -1,6 +1,10 @@
 rcd() {
+  local url="$1"
+  local path="$2"
+  local branch="$3"
+
   # Remove .git to make repo sync happy
-  rm -rf $2; git clone $1 --depth=1 -b $3 $2; rm -rf $2/.git
+  rm -rf $path; git clone $url --depth=1 -b $branch $path; rm -rf $path/.git
 }
 
 # ssh key is needed
